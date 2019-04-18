@@ -1,0 +1,4 @@
+ChromeDriver=C:\\Users\\Chaitanya\\Downloads\\chromedriver_win32\\chromedriver.exe
+FirefoxDriver=C:\\Users\\Chaitanya\\Downloads\\geckodriver-v0.23.0-win64\\geckodriver.exe
+IEDriver
+URL=https://www.google.com/

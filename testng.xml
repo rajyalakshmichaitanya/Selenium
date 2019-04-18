@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LearnAutomationSuite" parallel="classes">
+<parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" enabled="true" name="LearnAutomationTest1" >
+  	 <parameter name="browser" value="chrome"/>
+  	 <parameter name="a" value="1"/>
+  	 <parameter name="b" value="5"/>
+    <classes>
+      
+      <class name="learnAutomation.LearnAutomationTest" >
+      <methods>
+                    <include name="sum" />
+       </methods>
+       </class>
+      <class name="learnAutomation.ExplicitWait" />
+      <class name="learnAutomation.WindowHandle" />
+      
+          
+    </classes>
+    </test> 
+      <test thread-count="1" name="LearnAutomationTest2">
+      <groups><run><exclude name="register"></exclude></run></groups>
+    <classes>
+      <class name="britishAirways.BookingPage"/>
+      
+               
+    </classes>
+    </test> 
+ 
+</suite> <!-- LearnAutomationSuite -->
